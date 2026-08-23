@@ -17,7 +17,7 @@ Sign up at **https://qorenext-app.azurewebsites.net/signup** to get your `QORENE
 ### Claude Code
 ```bash
 claude mcp add --transport http qorenext-mcp \
-  "https://mcp-ts-server-app.nicebush-037a14dd.centralindia.azurecontainerapps.io/mcp/" \
+  "https://mcp.qorenext.com/tradescreening/mcp" \
   --header "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -29,7 +29,7 @@ or `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac):
 {
   "mcpServers": {
     "qorenext-mcp": {
-      "url": "https://mcp-ts-server-app.nicebush-037a14dd.centralindia.azurecontainerapps.io/mcp/",
+      "url": "https://mcp.qorenext.com/tradescreening/mcp",
       "headers": {
         "X-API-Key": "YOUR_API_KEY",
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 {
   "mcpServers": {
     "qorenext-mcp": {
-      "url": "https://mcp-ts-server-app.nicebush-037a14dd.centralindia.azurecontainerapps.io/mcp/",
+      "url": "https://mcp.qorenext.com/tradescreening/mcp",
       "headers": {
         "X-API-Key": "YOUR_API_KEY"
       }
