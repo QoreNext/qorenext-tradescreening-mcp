@@ -1,0 +1,66 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.QoreNext-IT/qorenext-mcp",
+  "description": "Sanctions and trade-screening due-diligence via MCP",
+  "version": "1.0.1",
+  "repository": {
+    "url": "https://github.com/QoreNext/qorenext-tradescreening-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.qorenext.com/tradescreening/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "value": "${qorenext_API_KEY}"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ]
+    }
+  ],
+  "environmentVariables": [
+    {
+      "name": "QORNEXT_API_KEY",
+      "description": "Your QornextMCP API key. Get one at https://qorenext-app.azurewebsites.net/signup",
+      "isRequired": true,
+      "isSecret": true,
+      "format": "string"
+    }
+  ],
+  "tools": [
+    {
+      "name": "health_check",
+      "description": "Verify MCP server is operational and get version info. No authentication required."
+    },
+    {
+      "name": "submit_sanctions_screening",
+      "description": "Submit entities for sanctions screening against global sanctions lists. Required fields: entityEnglishName or entityNativeName (at least one)."
+    },
+    {
+      "name": "submit_trade_screening",
+      "description": "Submit a company for trade screening due-diligence (denied-party checks, risk assessment, negative-news report). Required fields: address, website, and companyEnglishName or companyNativeName (at least one)."
+    },
+    {
+      "name": "get_trade_screening_status",
+      "description": "Get trade screening request status and the full due-diligence report once complete. Required field: request_id."
+    }
+  ],
+  "categories": [
+    "sanctions-screening",
+    "trade-screening"
+  ],
+  "license": "MIT",
+  "contact": {
+    "email": "support@qorenext.com",
+    "url": "https://qorenext.com"
+  }
+}
