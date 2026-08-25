@@ -10,7 +10,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.qorenext.com/tradescreening/mcp",
+      "url": "https://mcp.qorenext.com/tradescreening",
       "headers": [
         {
           "name": "X-API-Key",

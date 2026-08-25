@@ -17,7 +17,7 @@ Sign up at **https://qorenext-app.azurewebsites.net/signup** to get your `QORENE
 ### Claude Code
 ```bash
 claude mcp add --transport http qorenext-mcp \
-  "https://mcp.qorenext.com/tradescreening/mcp" \
+  "https://mcp.qorenext.com/tradescreening" \
   --header "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -29,7 +29,7 @@ or `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac):
 {
   "mcpServers": {
     "qorenext-mcp": {
-      "url": "https://mcp.qorenext.com/tradescreening/mcp",
+      "url": "https://mcp.qorenext.com/tradescreening",
       "headers": {
         "X-API-Key": "YOUR_API_KEY",
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 {
   "mcpServers": {
     "qorenext-mcp": {
-      "url": "https://mcp.qorenext.com/tradescreening/mcp",
+      "url": "https://mcp.qorenext.com/tradescreening",
       "headers": {
         "X-API-Key": "YOUR_API_KEY"
       }
@@ -78,7 +78,7 @@ check if QorenextMCP is running
 ---
 
 ### `submit_sanctions_screening`
-Submit entities for sanctions screening against global sanctions lists (OFAC, UN, EU, etc.).
+Submit entities for sanctions screening against global sanctions lists (OFAC, MEU,  EntityList, etc.).
 
 **Required per entity:** `entityEnglishName` or `entityNativeName` (at least one)
 
