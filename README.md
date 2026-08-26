@@ -2,7 +2,7 @@
 
 > Sanctions and trade-screening due-diligence — via MCP
 
-QorenextMCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that enables Claude and other AI clients to run sanctions screening and trade-screening due-diligence directly in chat.
+Qorenext Trade screening MCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that enables Claude and other AI clients to run sanctions screening and trade-screening due-diligence directly in chat.
 
 ---
 
@@ -63,7 +63,7 @@ Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 | Tool | Auth | Description |
 |---|---|---|
 | `health_check` | ❌ Public | Verify server is running, get version info |
-| `submit_sanctions_screening` | ✅ API Key | Submit entities for sanctions screening against global sanctions lists |
+| `submit_sanctions_screening` | ✅ API Key | Submit entities for sanctions screening against USA sanctions lists |
 | `submit_trade_screening` | ✅ API Key | Submit a company for trade screening due-diligence |
 | `get_trade_screening_status` | ✅ API Key | Poll status and retrieve the full due-diligence report |
 
@@ -78,15 +78,15 @@ check if QorenextMCP is running
 ---
 
 ### `submit_sanctions_screening`
-Submit entities for sanctions screening against global sanctions lists (OFAC, MEU,  EntityList, etc.).
+Submit entities for sanctions screening against USA sanctions lists (OFAC, MEU,  EntityList, etc.).
 
 **Required per entity:** `entityEnglishName` or `entityNativeName` (at least one)
 
 **Optional:** `country`, `address`
 
 ```
-screen Acme Trading LLC in Iran for sanctions
-check if أكمي للتجارة at 123 Azadi Street, Tehran is sanctioned
+Screen Acme trading LLC أكمي للتجار at 123 Azadi Street, Tehran for sanctions 
+
 ```
 
 **Returns:** one result per submitted entity, each with `matchFound`, `bestMatchScore`, and `matches`.
@@ -213,7 +213,7 @@ Claude: [calls get_trade_screening_status]
 
 ## Support
 
-- Issues: https://github.com/QoreNext-IT/QoreNextMCP/issues
+- Issues: https://github.com/QoreNext/qorenext-tradescreening-mcp/issues
 - Email: support@qorenext.com
 - Docs: https://qorenext.com
 
