@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.QoreNext-IT/qorenext-mcp",
+  "name": "io.github.QoreNext/qorenext-tradescreening-mcp",
   "description": "Sanctions and trade-screening due-diligence via MCP",
   "version": "1.0.1",
   "repository": {
@@ -14,7 +14,7 @@
       "headers": [
         {
           "name": "X-API-Key",
-          "value": "${qorenext_API_KEY}"
+          "value": "${QORENEXT_API_KEY}"
         },
         {
           "name": "Content-Type",
@@ -29,8 +29,8 @@
   ],
   "environmentVariables": [
     {
-      "name": "QORNEXT_API_KEY",
-      "description": "Your QornextMCP API key. Get one at https://qorenext-app.azurewebsites.net/signup",
+      "name": "QORENEXT_API_KEY",
+      "description": "Your Qorenext Trade Screening MCP API key. Get one at https://qorenext-app.azurewebsites.net/signup",
       "isRequired": true,
       "isSecret": true,
       "format": "string"

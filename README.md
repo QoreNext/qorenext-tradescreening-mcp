@@ -1,4 +1,4 @@
-# QorenextMCP
+# Qorenext Trade Screening MCP
 
 > Sanctions and trade-screening due-diligence — via MCP
 
@@ -72,7 +72,7 @@ Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 ### `health_check`
 Verify the server is running. No API key required.
 ```
-check if QorenextMCP is running
+check if Qorenext Trade Screening MCP is running
 ```
 
 ---
