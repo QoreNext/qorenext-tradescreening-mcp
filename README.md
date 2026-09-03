@@ -36,13 +36,14 @@ or `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac):
 ```json
 {
   "mcpServers": {
-    "qorenext-mcp": {
-      "url": "https://mcp.qorenext.com/tradescreening",
-      "headers": {
-        "X-API-Key": "YOUR_API_KEY",
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      }
+    "qorenext": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.qorenext.com/tradescreening",
+        "--header",
+        "X-API-Key:qore_xxxxx"
+      ]
     }
   }
 }
