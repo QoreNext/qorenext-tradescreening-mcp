@@ -98,6 +98,7 @@ Make sure the JSON braces and commas match exactly — one missing comma will br
 ### 6. Save the file
 Save your changes (Ctrl+S) and close the editor.
 
+### 7. Restart Claude Desktop
 Fully quit Claude Desktop by closing it, exiting it from the system tray/taskbar, and using Task Manager to End Task for any remaining Claude processes running in the background; then reopen Claude Desktop.
 
 ### C) Cursor / Windsurf
