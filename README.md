@@ -5,6 +5,11 @@
 Qorenext Trade screening MCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that enables Claude and other AI clients to run sanctions screening and trade-screening due-diligence directly in chat.
 
 ---
+## Prerequisites:
+•	Node.js and npm installed (npm is used to install the connector package).  
+•	A QoreNext Trade Screening api key.  
+•	An active product subscription is required to use Qore MCP.  
+•	Administrator or standard access to edit files in your user profile.
 
 ## Get your API key
 
@@ -20,27 +25,66 @@ Sign up at **https://qorenext-app.azurewebsites.net/signup** to get your `QORENE
 7. Copy the API key for use in Claude. 
 ---
 
-## Connect
+## How To Connect:
 
-### Claude Code
+### A) Claude Code
 ```bash
 claude mcp add --transport http qorenext-mcp \
   "https://mcp.qorenext.com/tradescreening" \
   --header "X-API-Key: YOUR_API_KEY"
 ```
 
-### Claude Desktop
-Edit `%APPDATA%\Claude\claude_desktop_config.json` (Windows)
-or `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac):
+### B) Claude Desktop
+
+## Prerequisites:
+•	Claude Desktop installed on Windows.  
+•	Node.js and npm installed (npm is used to install the connector package).  
+•	A QoreNext CRM api key.  
+•	An active product subscription is required to use Qore MCP.  
+•	Administrator or standard access to edit files in your user profile.  
+
+## Install Node.js  
+- Download and install the **LTS version** from [nodejs.org](https://nodejs.org/).
+- The installation includes **npm** and **npx**.
+- Open **Terminal** (Mac) or **Command Prompt/PowerShell** (Windows).
+- Verify the installation: `bash below commands  
+node -v  
+npx -v  
+
+Both commands should display a version number.  
+If you see "command not found", restart your terminal and try again.  
+
+### ## Steps to Setup the Claude Desktop
+
+### 1. Open Claude Desktop  
+Launch the **Claude Desktop** application on your computer.  
+
+### 2. Open Settings
+Go to:
+**Menu → File → Settings**
+
+### 3. Open Developer Settings
+In the Settings window, select **Developer** from the left-side menu.  
+
+### 4. Open the Config File
+
+Click **Edit Config** to open the `claude_desktop_config.json` file.  
+Remove the existing command in the file and paste the configuration provided below in Json.
+
+**Windows default location:**  
+C:\Users\<YourUsername>\AppData\Roaming\Claude\claude_desktop_config.json or `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac)
+
+### 5. Add the QoreNext MCP Server
+Add the following configuration to claude_desktop_config.json and replace qore_xxxxx with your real API key.
 
 ```json
 {
   "mcpServers": {
-    "qorenext": {
+    "qorenext-mcp-crm": {
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.qorenext.com/tradescreening",
+        "https://mcp.qorenext.com/crm",
         "--header",
         "X-API-Key:qore_xxxxx"
       ]
@@ -48,21 +92,33 @@ or `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac):
   }
 }
 ```
+Watch your JSON syntax
+Make sure the JSON braces and commas match exactly — one missing comma will break the file.
 
-### Cursor / Windsurf
+### 6. Save the file
+Save your changes (Ctrl+S) and close the editor.
+
+### 7. Restart Claude Desktop
+Fully quit Claude Desktop (not just close the window — exit it from the system tray/taskbar too), then reopen it.
+
+### C) Cursor / Windsurf
 Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 
 ```json
 {
   "mcpServers": {
-    "qorenext-mcp": {
-      "url": "https://mcp.qorenext.com/tradescreening",
-      "headers": {
-        "X-API-Key": "YOUR_API_KEY"
-      }
+    "qorenext-mcp-crm": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.qorenext.com/crm",
+        "--header",
+        "X-API-Key:qore_xxxxx"
+      ]
     }
   }
 }
+```
 ```
 
 ---
