@@ -18,7 +18,7 @@ Sign up at **https://qorenext-app.azurewebsites.net/signup** to get your `QORENE
 ## Steps to get your API Key
 1. Sign up at **https://qorenext-app.azurewebsites.net/signup**. 
 2. Select Trade Screening. 
-3. Choose your subscription plan. 
+3. Buy your subscription plan. 
 4. Open Profile → APIs. 
 5. Click Generate API Key. 
 6. Give your API key a name and click Create. 
@@ -39,7 +39,7 @@ claude mcp add --transport http qorenext-mcp \
 ## Prerequisites:
 •	Claude Desktop installed on Windows.  
 •	Node.js and npm installed (npm is used to install the connector package).  
-•	A QoreNext CRM api key.  
+•	A QoreNext Trade Screening api key.  
 •	An active product subscription is required to use Qore MCP.  
 •	Administrator or standard access to edit files in your user profile.  
 
@@ -80,11 +80,11 @@ Add the following configuration to claude_desktop_config.json and replace qore_x
 ```json
 {
   "mcpServers": {
-    "qorenext-mcp-crm": {
+    "qorenext-mcp-ts": {
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.qorenext.com/crm",
+        "https://mcp.qorenext.com/tradescreening",
         "--header",
         "X-API-Key:qore_xxxxx"
       ]
@@ -105,13 +105,13 @@ Fully quit Claude Desktop (not just close the window — exit it from the system
 Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 
 ```json
-{
+{{
   "mcpServers": {
-    "qorenext-mcp-crm": {
+    "qorenext-mcp-ts": {
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.qorenext.com/crm",
+        "https://mcp.qorenext.com/tradescreening",
         "--header",
         "X-API-Key:qore_xxxxx"
       ]
