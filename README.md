@@ -105,7 +105,7 @@ Fully quit Claude Desktop by closing it, exiting it from the system tray/taskbar
 Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 
 ```json
-{{
+{
   "mcpServers": {
     "qorenext-mcp-ts": {
       "command": "npx",
