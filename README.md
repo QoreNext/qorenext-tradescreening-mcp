@@ -119,7 +119,6 @@ Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
   }
 }
 ```
-```
 
 ---
 
