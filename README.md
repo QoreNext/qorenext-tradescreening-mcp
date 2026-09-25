@@ -260,7 +260,7 @@ Claude: [calls submit_sanctions_screening]
 
 **Trade Screening:**
 ```
-You:    Run trade screening on Acme Corp, 1 Main St, https://acme.com
+You:    Run trade screening on Changchun New Industries Optoelectronics Tech. Co., Ltd, No.888 Jinhu Road High-tech Zone,Changchun 130103, P.R.China, https://www.cnilaser.com/C-profile.htm
 
 Claude: [calls submit_trade_screening]
         ✅ Submitted. Tracking ID: 424
@@ -269,8 +269,34 @@ You:    Get status of trade screening request 424
 
 Claude: [calls get_trade_screening_status]
         Status: Completed
-        Risk Level: Low
+        Risk Level: Medium
         Recommendation: Proceed with standard due diligence.
+
+# Risk Assessment Summary
+## Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)
+ 
+- **Country:** China
+- **Industry:** Optoelectronics and Laser Systems Manufacturing
+- **Risk Level:** Medium
+ 
+### Company Overview
+Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI) was founded in 1996 by Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences. The company manufactures lasers, laser systems, spectrum analyzers, and optical equipment, serving customers in over 120 countries.
+ 
+### Key Risk Factors
+- Products are used in national defense, aerospace, aviation, and satellite-related applications.
+- Produces laser products used for semiconductor cutting and semiconductor-related applications.
+- Has links to several restricted or high-risk organizations, including:
+  - Changchun Institute of Optics, Fine Mechanics and Physics (CAS)
+  - Beijing University of Aeronautics and Astronautics (BUAA)
+  - Huawei Technologies Co., Ltd.
+  - Sichuan University
+ 
+### Positive Findings
+- Holds international certifications including ISO9001, CE, RoHS, FDA, and JQA.
+- Lists customers such as Harvard University, Samsung, and Texas Instruments.
+ 
+### Recommendation
+**Proceed with caution and enhanced due diligence** due to aerospace, defense, semiconductor activities, and associations with restricted entities.
 ```
 
 ---
