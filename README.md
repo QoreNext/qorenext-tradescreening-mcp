@@ -273,30 +273,28 @@ Claude: [calls get_trade_screening_status]
         Recommendation: Proceed with standard due diligence.
 
 # Risk Assessment Summary
+ 
 ## Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)
  
 - **Country:** China
 - **Industry:** Optoelectronics and Laser Systems Manufacturing
-- **Risk Level:** Medium
+- **Risk Level:** High
  
 ### Company Overview
-Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI) was founded in 1996 by Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences. The company manufactures lasers, laser systems, spectrum analyzers, and optical equipment, serving customers in over 120 countries.
  
-### Key Risk Factors
-- Products are used in national defense, aerospace, aviation, and satellite-related applications.
-- Produces laser products used for semiconductor cutting and semiconductor-related applications.
-- Has links to several restricted or high-risk organizations, including:
-  - Changchun Institute of Optics, Fine Mechanics and Physics (CAS)
-  - Beijing University of Aeronautics and Astronautics (BUAA)
-  - Huawei Technologies Co., Ltd.
-  - Sichuan University
+Changchun New Industries Optoelectronics Tech. Co., Ltd. is a Chinese manufacturer of lasers, laser systems, spectrum analyzers, and optical equipment. The company was founded by Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences and exports its products globally.
  
-### Positive Findings
-- Holds international certifications including ISO9001, CE, RoHS, FDA, and JQA.
-- Lists customers such as Harvard University, Samsung, and Texas Instruments.
+### Negative Findings
+ 
+- Products are used in national defense equipment, aerospace, aviation, and satellite-related applications.
+- Produces laser products used for semiconductor-related applications, including semiconductor cutting.
+- Founded by Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences, which is present on a Restricted Party List.
+- Awarded a procurement project by Beijing University of Aeronautics and Astronautics (BUAA), which is present on a Restricted Party List.
+- Participated in a high-power semiconductor laser project involving Huawei Technologies Co., Ltd., Tsinghua University, Jilin University, and Sichuan University, which are identified as restricted or high-risk entities in the report.
  
 ### Recommendation
-**Proceed with caution and enhanced due diligence** due to aerospace, defense, semiconductor activities, and associations with restricted entities.
+ 
+**High Risk. Proceed with caution and conduct enhanced due diligence before engagement. Particular attention should be given to the company's defense, aerospace, satellite, semiconductor-related activities, and its associations with restricted or high-risk entities.**
 ```
 
 ---
