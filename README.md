@@ -101,7 +101,82 @@ Save your changes (Ctrl+S) and close the editor.
 ### 7. Restart Claude Desktop
 Fully quit Claude Desktop by closing it, exiting it from the system tray/taskbar, and using Task Manager to End Task for any remaining Claude processes running in the background; then reopen Claude Desktop.
 
-### C) Cursor / Windsurf
+### C) ChatGPT Desktop
+
+This guide explains how to configure the QoreNext MCP Server in the ChatGPT Desktop application.
+
+## Prerequisites
+
+- ChatGPT Desktop installed on your computer.
+- A valid QoreNext API key.
+- Internet connectivity.
+
+### Step 1: Open ChatGPT Desktop
+
+1. Launch the ChatGPT Desktop application.
+2. At the top of the ChatGPT window, locate the mode dropdown above the **New Chat** icon.
+3. Change the mode to **Codex**.
+
+### Step 2: Open Settings
+
+1. Click your profile icon in the bottom-left corner of the ChatGPT window.
+2. Select **Settings**.
+
+### Step 3: Open Plugins
+
+Navigate to:
+
+```text
+Integrations → Plugins
+```
+
+### Step 4: Add an MCP Server
+
+1. In the Plugins window, click the **Add** dropdown.
+2. Select **Add MCP Server**.
+
+### Step 5: Configure the QoreNext MCP Server
+
+### Name
+
+```text
+QoreNext MCP Server
+```
+
+### Command to Launch
+
+```text
+npx
+```
+
+### Arguments
+
+Add the following arguments one by one:
+
+```text
+-y
+mcp-remote
+https://mcp.qorenext.com/tradescreening
+--header
+X-API-Key: YOUR_API_KEY
+```
+
+**Replace `YOUR_API_KEY` with your actual QoreNext API key.
+
+### Step 6: Save the MCP Server
+
+1. Verify all fields and arguments.
+2. Click **Save**.
+3. Close the configuration window.
+
+### Step 7: Restart ChatGPT Desktop
+
+1. Close ChatGPT Desktop completely.
+2. Open Task Manager and end any remaining ChatGPT processes.
+3. Reopen ChatGPT Desktop.
+4. After ChatGPT Desktop opens, Switch the mode from Codex to ChatGPT
+
+### D) Cursor / Windsurf
 Add to `.cursor/mcp.json` or `.windsurf/mcp.json`:
 
 ```json
