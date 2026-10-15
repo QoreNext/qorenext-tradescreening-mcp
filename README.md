@@ -347,6 +347,44 @@ Claude: [calls get_trade_screening_status]
         Risk Level: Medium
         Recommendation: Proceed with standard due diligence.
 
+To download the full report in Word format, paste the following prompt into your MCP client (e.g., Claude Desktop) with your actual tracking ID.
+
+Export and download the due diligence report for trade screening request {{tracking_id}} in Word format.
+Provide the exact report from system generated output, do not add any extra information yourself.
+ 
+Company Name (In Native):
+Company Name (In English):
+Company Address:
+Homepage:
+Country:
+Company Overview: (default: No exact match found. Source: None)
+Parent Entity (in Native): (default: No information found)
+Parent Entity (In English): (default: No information found) 
+Alias: (default: No information found)
+Industry Type: (default: No information available. Sources: None)
+Key Products:
+Risk Level:
+Red flag Keywords hits:
+Risk Assessment: (full text incl. **Potential MEU Risk**, **Potential SEMI Risk**, **Potential DPL Risk**)
+Verdict (Level 1 Reviewer/Level 2 Reviewer):
+Positive Findings: (default: No information found)
+Negative Findings: (default: No information found)
+URL {{n}} : {{summary}}
+Article Excerpt:
+{{excerpt}}
+This incident is also referenced in {{x}} other related articles: URL {{n}} (only if returned)
+(repeat for every finding, in order)
+Restricted Party List: (default: No hits found)
+Artifacts URL:
+1. URL {{n}}: {{link}}
+(list all)
+Recommendation:
+Disclaimer
+This report is based on publicly available information and is intended to provide a basis for assessment of trade worthiness of the company in question.
+
+
+## Final Report
+
 # Risk Assessment Summary
  
 ## Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)
