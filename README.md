@@ -381,11 +381,11 @@ Artifacts URL:
 Recommendation:
 Disclaimer
 This report is based on publicly available information and is intended to provide a basis for assessment of trade worthiness of the company in question.
+```
 
+## Final Report
 
-### Final Report
-
-# Risk Assessment Summary
+## Risk Assessment Summary
  
 ## Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)
  
