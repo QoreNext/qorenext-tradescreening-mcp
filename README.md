@@ -387,17 +387,17 @@ This report is based on publicly available information and is intended to provid
 
 **Risk Assessment Summary**
  
-## Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)
+**Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)**
  
 - **Country:** China
 - **Industry:** Optoelectronics and Laser Systems Manufacturing
 - **Risk Level:** High
  
-### Company Overview
+**Company Overview**
  
 Changchun New Industries Optoelectronics Tech. Co., Ltd. is a Chinese manufacturer of lasers, laser systems, spectrum analyzers, and optical equipment. The company was founded by Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences and exports its products globally.
  
-### Negative Findings
+**Negative Findings**
  
 - Products are used in national defense equipment, aerospace, aviation, and satellite-related applications.
 - Produces laser products used for semiconductor-related applications, including semiconductor cutting.
@@ -405,7 +405,7 @@ Changchun New Industries Optoelectronics Tech. Co., Ltd. is a Chinese manufactur
 - Awarded a procurement project by Beijing University of Aeronautics and Astronautics (BUAA), which is present on a Restricted Party List.
 - Participated in a high-power semiconductor laser project involving Huawei Technologies Co., Ltd., Tsinghua University, Jilin University, and Sichuan University, which are identified as restricted or high-risk entities in the report.
  
-### Recommendation
+**Recommendation**
  
 **High Risk. Proceed with caution and conduct enhanced due diligence before engagement. Particular attention should be given to the company's defense, aerospace, satellite, semiconductor-related activities, and its associations with restricted or high-risk entities.**
 ```
