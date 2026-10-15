@@ -385,7 +385,7 @@ This report is based on publicly available information and is intended to provid
 
 ## Final Report
 
-## Risk Assessment Summary
+**Risk Assessment Summary**
  
 ## Changchun New Industries Optoelectronics Tech. Co., Ltd. (CNI)
  
