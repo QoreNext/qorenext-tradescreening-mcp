@@ -331,6 +331,12 @@ You:    Screen Acme Trading LLC in Iran for sanctions.
 
 Claude: [calls submit_sanctions_screening]
         ✅ Screened. No match found (score: 0)
+
+For retrieving reports in a standard format, use the prompts given below.
+
+Get the sanctions screening results for in this format. output only a table with these exact columns, in this order: 
+| Entity Name | Country | Address | Match Found | Match Score | Matched Entity Name | Matched Country | Matched Address | Agency | Category | Rules: - Use only data returned by the tool. Copy values verbatim. Do not infer, add, or reword. - One row per match. If an entity has several matches, repeat its name, country and address on each row. - If an entity has no match, output one row with Match Found = "No" and "-" in all remaining columns. - Match Found = "Yes" or "No". Match Score exactly as returned. - Use "-" for any other missing value. - No text before or after the table. No summary or commentary.
+ 
 ```
 
 **Trade Screening:**
