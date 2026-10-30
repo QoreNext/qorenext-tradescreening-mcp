@@ -13,10 +13,10 @@ Qorenext Trade screening MCP is a [Model Context Protocol](https://modelcontextp
 
 ## Get your API key
 
-Sign up at **https://qorenext-app.azurewebsites.net/signup** to get your `QORENEXT_API_KEY`.
+Sign up at **https://platform.qorenext.com** to get your `QORENEXT_API_KEY`.
 
 ## Steps to get your API Key
-1. Sign up at **https://qorenext-app.azurewebsites.net/signup**. 
+1. Sign up at **https://platform.qorenext.com**. 
 2. Select Trade Screening. 
 3. Buy your subscription plan. 
 4. Open Profile → APIs. 
