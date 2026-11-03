@@ -18,11 +18,24 @@ Sign up at **https://platform.qorenext.com** to get your `QORENEXT_API_KEY`.
 ## Steps to get your API Key
 1. Sign up at **https://platform.qorenext.com**. 
 2. Select Trade Screening. 
-3. Buy your subscription plan. 
-4. Open Profile → APIs. 
-5. Click Generate API Key. 
-6. Give your API key a name and click Create. 
-7. Copy the API key for use in Claude. 
+3. Buy your subscription plan.
+4. Once inside the qorenext platform, click your user name in the top-right corner.
+5. Select Manage. A new window will open.
+6. Open the API Key tab.
+7. Enter the required details:
+    Name
+    Expiry Date (select from the dropdown)
+8. Click Create API Key. The new API key will be generated, and you can copy it. A Machine ID is generated along with the key.
+9. Select the API access (bottom left panel) and click Add Grant.
+10. A pop window will appear, add the machine ID & select the product from the dropdown.
+11. Your product is now ready to use.
+
+## MCP Format for Configuration
+Use the following format when configuring your MCP client:
+Machine_ID:qore_xxxxx
+(eg:
+Here, Machine_ID is the ID generated with your API key, and qore_xxxxx is the API key itself.
+
 ---
 
 ## How To Connect:
@@ -86,7 +99,7 @@ Add the following configuration to claude_desktop_config.json and replace qore_x
         "mcp-remote",
         "https://mcp.qorenext.com/tradescreening",
         "--header",
-        "X-API-Key:qore_xxxxx"
+        "X-API-Key:YOUR_MACHINE_ID:YOUR_API_KEY"
       ]
     }
   }
